@@ -8,7 +8,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class IoCTest {
     public static void main(String[] args) {
-        ApplicationContext actx = new FileSystemXmlApplicationContext("resources/iocconfig.xml");
+        ApplicationContext actx = new FileSystemXmlApplicationContext("src/main/resources/iocconfig.xml");
         User user1 = (User) actx.getBean("user");
         System.out.println(user1);
         user1.setAge(18);

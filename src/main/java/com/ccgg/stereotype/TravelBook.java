@@ -1,4 +1,13 @@
 package com.ccgg.stereotype;
 
-public class TravelBook {
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public class TravelBook implements Book{
+    @Override
+    public String toString(){
+        return "This is the Travel Book!";
+    }
 }

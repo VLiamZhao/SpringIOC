@@ -1,4 +1,11 @@
 package com.ccgg.stereotype;
 
-public class HistoryBook {
+import org.springframework.stereotype.Component;
+
+@Component
+public class HistoryBook implements Book{
+    @Override
+    public String toString() {
+        return "This is the History Book!";
+    }
 }

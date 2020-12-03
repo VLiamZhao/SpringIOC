@@ -7,6 +7,9 @@ public class Wrapper {
     private User user;
     private Person p;
 
+    public Wrapper() {
+    }
+
     public Wrapper(User user) {
         super();
     }
